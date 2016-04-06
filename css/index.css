@@ -93,7 +93,7 @@ width: 60vw;
 text-align: center;}
 @media screen and (max-width: 1400px) {
   .content p{
-    font-size:12px;
+    font-size:8px;
     font-family:DFKai-sb;
     
     overflow：hidden;
@@ -109,10 +109,4 @@ text-align: center;}
     
      justify-content:space-around;
      margin-bottom: 30px;}
-@media screen and (max-height: : 600px){
-  .content p{
-    font-size:8px;
-    font-family:DFKai-sb;
-    
-    overflow：hidden;
-}
+
