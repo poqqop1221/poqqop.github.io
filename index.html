@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    
     <title>homepage</title>
 </head>
 
@@ -27,8 +29,8 @@
            
             <a href="profile.html"><img src="image/resume.jpg" alt=""></a>
         </div>
-        <div class="content">
-            <p>大學就讀於國立暨南大學經濟學系，在就讀中學習到許多經濟學上的知識，隨著知識的不斷累積也激起我對於金融投資相關的興趣，並且試著去摸索，曾經投資基金與黃金，也獲得不錯的利潤。課餘之外也參加了運動球隊，並擔任過隊長，深刻了解團隊合作以及向心力的重要。畢業後順利考取中興企研所，在研究所求學過程除了學習本科系的科目外，也選修許多有關財務跟國際金融以及模擬的課程，讓自己有更多不同面向的知識，在論文題目的選擇上，則選擇黃金與外匯的議題來研究，在這過程中讓我學習到更多有關風險規避等相關的知識。</p>
+        <div class="content inner">
+            <p >大學就讀於國立暨南大學經濟學系，在就讀中學習到許多經濟學上的知識，隨著知識的不斷累積也激起我對於金融投資相關的興趣，並且試著去摸索，曾經投資基金與黃金，也獲得不錯的利潤。課餘之外也參加了運動球隊，並擔任過隊長，深刻了解團隊合作以及向心力的重要。畢業後順利考取中興企研所，在研究所求學過程除了學習本科系的科目外，也選修許多有關財務跟國際金融以及模擬的課程，讓自己有更多不同面向的知識，在論文題目的選擇上，則選擇黃金與外匯的議題來研究，在這過程中讓我學習到更多有關風險規避等相關的知識。</p>
         </div>
         <div class="right-content"><img src="image/bot.jpg" alt="">
         </div>
@@ -38,8 +40,8 @@
             <a href="food.html"><img src="image/food.jpg" alt="">
             </a>
         </div>
-        <div class="content yo" >
-            <p>話說一直很想吃牧島燒肉的願望，這陣子終於實現了！從網路上的文章發現牧島的店內設計，還有料理食物的品質，如果真的要吃燒烤，或是2016中秋節還不知道去哪裡烤肉，或許可以考慮牧島燒肉。而這間燒烤店有兩間分店，大墩店和豐原店。可以點擊官網查看！這次來吃的分店是豐原店，從外觀經過，絕對不會miss掉的設計</p>
+        <div class="content yo inner" >
+            <p >話說一直很想吃牧島燒肉的願望，這陣子終於實現了！從網路上的文章發現牧島的店內設計，還有料理食物的品質，如果真的要吃燒烤，或是2016中秋節還不知道去哪裡烤肉，或許可以考慮牧島燒肉。而這間燒烤店有兩間分店，大墩店和豐原店。可以點擊官網查看！這次來吃的分店是豐原店，從外觀經過，絕對不會miss掉的設計</p>
         </div>
         <div class="right-content"><img src="image/moto.jpg" alt="">
         </div>
@@ -57,6 +59,22 @@
     </div>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script>
+            $(function(){
+                var $inner = $('.inner');
+                var innerLength = $inner.length;
+                var i = 0;
+                for(i = 0; i < innerLength; i++){
+                    (function(){
+                        if($($inner[i]).height() >= $($inner[i]).parent().height()){
+                            $($inner[i]).css('font-size',parseInt($($inner[i]).css('font-size'))-1 + 'px');
+                            arguments.callee();
+                        }
+                    })();
+                }
+            });
+        </script>
 </body>
 
 </html>
