@@ -60,21 +60,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-        <script>
-            $(function(){
-                var $inner = $('.inner');
-                var innerLength = $inner.length;
-                var i = 0;
-                for(i = 0; i < innerLength; i++){
-                    (function(){
-                        if($($inner[i]).height() >= $($inner[i]).parent().height()){
-                            $($inner[i]).css('font-size',parseInt($($inner[i]).css('font-size'))-1 + 'px');
-                            arguments.callee();
-                        }
-                    })();
-                }
-            });
-        </script>
+        
 </body>
 
 </html>
